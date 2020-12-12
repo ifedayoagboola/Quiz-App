@@ -36,6 +36,22 @@ let questions = [
     choice4: "alert('Hello World');",
     answer: 4,
   },
+  {
+    question: "One of the followings is not responsible for a display fault",
+    choice1: "RAM",
+    choice2: "Screen",
+    choice3: "Signal Cable",
+    choice4: "USB",
+    answer: 4,
+  },
+  {
+    question: "Which of the following is not used to measure system speed?",
+    choice1: "CPU GHz",
+    choice2: "HDD RPM",
+    choice3: "RAM Speed",
+    choice4: "Processor Gzh",
+    answer: 1,
+  },
 ];
 
 //Constants
