@@ -50,13 +50,13 @@ let questions = [
     choice2: "HDD RPM",
     choice3: "RAM Speed",
     choice4: "Processor Gzh",
-    answer: 1,
+    answer: 4,
   },
 ];
 
 //Constants
 const CORRECT_BONUS = 5;
-const MAX_QUESTIONS = 3;
+const MAX_QUESTIONS = 5;
 
 startGame = () => {
   questionCounter = 0;
@@ -67,6 +67,7 @@ startGame = () => {
 
 getNewQuestion = () => {
   if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+    localStorage.setItem("mostRecentScore", score);
     // go to the end page
     return window.location.assign("/end.html");
   }
